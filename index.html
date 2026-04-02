@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DOB Calculator - Date of Birth Calculator</title>
+
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💬</text></svg>">
+
+<style>
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: #e0e5ec;
+    text-align: center;
+    color: #333;
+}
+
+header {
+    padding: 20px;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.container {
+    padding: 15px;
+}
+
+.card {
+    max-width: 420px;
+    margin: auto;
+    padding: 25px;
+    border-radius: 20px;
+    background: #e0e5ec;
+    box-shadow: 8px 8px 16px #b8bec7,
+                -8px -8px 16px #ffffff;
+}
+
+input, button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 12px;
+    border-radius: 10px;
+    border: none;
+    font-size: 16px;
+}
+
+input {
+    background: #e0e5ec;
+    box-shadow: inset 4px 4px 8px #b8bec7,
+                inset -4px -4px 8px #ffffff;
+}
+
+button {
+    cursor: pointer;
+    background: #e0e5ec;
+    box-shadow: 4px 4px 8px #b8bec7,
+                -4px -4px 8px #ffffff;
+}
+
+button:active {
+    box-shadow: inset 4px 4px 8px #b8bec7,
+                inset -4px -4px 8px #ffffff;
+}
+
+.result {
+    margin-top: 15px;
+    font-weight: bold;
+    line-height: 1.6;
+}
+
+.cta {
+    margin: 25px 0;
+}
+
+.cta a {
+    display: inline-block;
+    padding: 14px 20px;
+    border-radius: 12px;
+    text-decoration: none;
+    color: #fff;
+    background: #ff4d6d;
+    font-weight: bold;
+    animation: heartbeat 1.5s infinite;
+}
+
+@keyframes heartbeat {
+    0% { transform: scale(1); }
+    25% { transform: scale(1.05); }
+    50% { transform: scale(1); }
+    75% { transform: scale(1.08); }
+    100% { transform: scale(1); }
+}
+
+.content {
+    max-width: 850px;
+    margin: auto;
+    text-align: left;
+    padding: 15px;
+    line-height: 1.8;
+}
+
+.features {
+    max-width: 650px;
+    margin: 20px auto;
+    text-align: left;
+}
+
+.features ul {
+    padding-left: 20px;
+}
+
+@media (max-width: 480px) {
+    header { font-size: 18px; }
+}
+</style>
+</head>
+
+<body>
+
+<header>DOB Calculator - Date of Birth Calculator</header>
+
+<div class="container">
+
+    <!-- TOOL -->
+    <div class="card">
+        <input type="date" id="dob">
+        <button onclick="calculateAge()">Calculate Age</button>
+        <div class="result" id="result"></div>
+    </div>
+
+    <!-- CTA -->
+    <div class="cta">
+        <a href="https://dobcalculator.us" target="_blank">
+            ❤️ Explore Free Premium Version
+        </a>
+    </div>
+
+    <!-- SEO CONTENT -->
+    <div class="content">
+        <h2>Accurate DOB Calculator – Find Your Age Instantly</h2>
+
+        <p>
+            A Date of Birth (DOB) calculator is an essential tool for quickly determining your exact age based on your birth date. Whether you need your age for official documents, job applications, school forms, or simply personal curiosity, this DOB calculator provides instant and precise results. Instead of manually counting years, months, and days, this tool simplifies the process and delivers accurate calculations in seconds.
+        </p>
+
+        <p>
+            In today’s fast-paced digital environment, users expect quick and reliable tools that eliminate guesswork. This date of birth calculator is designed with performance and simplicity in mind. By entering your birth date, you can instantly calculate your current age in years, months, and days. It’s perfect for students, professionals, parents, and anyone who needs quick access to accurate age information.
+        </p>
+
+        <p>
+            Unlike manual calculations, which can lead to errors due to varying month lengths and leap years, this tool uses precise date logic to ensure accuracy. It automatically adjusts for calendar differences, providing a reliable output every time. Whether you're calculating age for legal purposes or personal use, you can trust this tool for consistent results.
+        </p>
+
+        <p>
+            The interface features a modern Neumorphism (Soft UI) design, offering a clean and visually appealing experience. It works seamlessly across smartphones, tablets, and desktops, ensuring accessibility wherever you are. Additionally, no data is stored or shared, making it completely secure and privacy-friendly.
+        </p>
+
+        <h3>How to Use the DOB Calculator</h3>
+
+        <ol>
+            <li>Select your date of birth using the date picker.</li>
+            <li>Click on the "Calculate Age" button.</li>
+            <li>Instantly view your exact age in years, months, and days.</li>
+            <li>Use the result for personal, academic, or professional purposes.</li>
+        </ol>
+
+        <p>
+            This tool is ideal for anyone who wants a fast, reliable, and user-friendly way to calculate age. Whether you're checking eligibility criteria, tracking milestones, or just satisfying curiosity, the DOB calculator is your go-to solution. With its lightweight design and instant performance, it ensures a smooth experience every time you use it.
+        </p>
+
+        <p>
+            Try it now and discover how easy it is to calculate your age with precision and confidence. No complex steps, no delays—just accurate results in seconds.
+        </p>
+    </div>
+
+    <!-- FEATURES -->
+    <div class="features">
+        <h3>Key Features</h3>
+        <ul>
+            <li>📅 Accurate age calculation (years, months, days)</li>
+            <li>⚡ Instant results with fast performance</li>
+            <li>📱 Fully responsive across all devices</li>
+            <li>🔒 No data storage or privacy concerns</li>
+            <li>🎨 Modern Neumorphism (Soft UI) design</li>
+            <li>🚀 Lightweight and easy to use</li>
+        </ul>
+    </div>
+
+</div>
+
+<script>
+function calculateAge() {
+    const dobInput = document.getElementById("dob").value;
+    const result = document.getElementById("result");
+
+    if (!dobInput) {
+        result.innerText = "Please select your date of birth.";
+        return;
+    }
+
+    const dob = new Date(dobInput);
+    const today = new Date();
+
+    let years = today.getFullYear() - dob.getFullYear();
+    let months = today.getMonth() - dob.getMonth();
+    let days = today.getDate() - dob.getDate();
+
+    if (days < 0) {
+        months--;
+        const prevMonth = new Date(today.getFullYear(), today.getMonth(), 0).getDate();
+        days += prevMonth;
+    }
+
+    if (months < 0) {
+        years--;
+        months += 12;
+    }
+
+    result.innerHTML = `
+        Age: ${years} Years, ${months} Months, ${days} Days
+    `;
+}
+</script>
+
+</body>
+</html>
